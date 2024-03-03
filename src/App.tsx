@@ -20,11 +20,17 @@ export const App = () => {
       <Layout className={styles.main}>
         <div className={styles.main}>
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/exchanges" element={<Exchanges />} />
-            <Route path="/cryptocurrencies" element={<Cryptocurrencies />} />
-            <Route path="/cryptocurrencies/:id" element={<CryptoDetails />} />
-            <Route path="/news" element={<News />} />
+            <Route path="/crypto" element={<HomePage />} />
+            <Route path="/crypto/exchanges" element={<Exchanges />} />
+            <Route
+              path="/crypto/cryptocurrencies"
+              element={<Cryptocurrencies />}
+            />
+            <Route
+              path="/crypto/cryptocurrencies/:id"
+              element={<CryptoDetails />}
+            />
+            <Route path="/crypto/news" element={<News />} />
           </Routes>
         </div>
         <Footer />
