@@ -10,6 +10,8 @@ import {
   MoneyCollectOutlined,
 } from "@ant-design/icons";
 
+import LOGO from "../../public/coinbase.png";
+
 import styles from "../styles/navbar.module.css";
 
 export const Navbar: FC = () => {
@@ -19,7 +21,7 @@ export const Navbar: FC = () => {
 
   return (
     <div className={styles.navbar}>
-      <img src="/coinbase.png" alt="#" className={styles.logo} />
+      <img src={LOGO} alt="Логотип 'coinbase'" className={styles.logo} />
       <Button
         className={styles.burger}
         onClick={() => setIsActiveMenu((prev) => !prev)}
@@ -29,14 +31,14 @@ export const Navbar: FC = () => {
       <nav className={styles.nav + " " + (isActiveMenu && styles.active)}>
         <ul className={styles.list}>
           <li className={styles.item}>
-            <NavLink to="/" className={styles.link} onClick={closeMenu}>
+            <NavLink to="/crypto" className={styles.link} onClick={closeMenu}>
               <HomeOutlined />
               Главная
             </NavLink>
           </li>
           <li className={styles.item}>
             <NavLink
-              to="/exchanges"
+              to="/crypto/exchanges"
               className={styles.link}
               onClick={closeMenu}
             >
@@ -46,7 +48,7 @@ export const Navbar: FC = () => {
           </li>
           <li className={styles.item}>
             <NavLink
-              to="/cryptocurrencies"
+              to="/crypto/cryptocurrencies"
               className={styles.link}
               onClick={closeMenu}
             >
@@ -55,7 +57,11 @@ export const Navbar: FC = () => {
             </NavLink>
           </li>
           <li className={styles.item}>
-            <NavLink to="/news" className={styles.link} onClick={closeMenu}>
+            <NavLink
+              to="/crypto/news"
+              className={styles.link}
+              onClick={closeMenu}
+            >
               <BulbOutlined />
               Новости
             </NavLink>
