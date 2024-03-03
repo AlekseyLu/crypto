@@ -1,6 +1,7 @@
 {
   "name": "crypto",
   "private": true,
+  "homepage": "https://alekseylu.github.io/crypto/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
