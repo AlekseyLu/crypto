@@ -1,0 +1,24 @@
+.footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #333;
+}
+
+.logo {
+  width: 120px;
+}
+
+.list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #333;
+  transition: color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+}

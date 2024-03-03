@@ -1,0 +1,15 @@
+.header {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+img {
+  width: 120px;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    display: flex;
+  }
+}

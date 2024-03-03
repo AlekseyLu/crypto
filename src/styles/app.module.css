@@ -1,0 +1,75 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141a28;
+  font-family: "Helvetica", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  margin: 0 auto;
+  padding: 20px;
+  min-width: 320px;
+  max-width: 1200px;
+}
+
+.main {
+  background-color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .app {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .app {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    display: block;
+    padding: 0;
+  }
+}
