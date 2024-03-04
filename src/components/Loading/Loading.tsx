@@ -1,8 +1,6 @@
-import { FC } from "react";
+import styles from "./Loading.module.css";
 
-import styles from "../styles/Loading.module.css";
-
-export const Loading: FC = () => {
+export const Loading = () => {
   return (
     <div className={styles.loadContainer}>
       <h2 className={styles.loadTitle}>loading...</h2>

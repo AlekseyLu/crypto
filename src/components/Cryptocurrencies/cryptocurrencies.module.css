@@ -28,6 +28,10 @@
     0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
 }
 
+.item:hover a {
+  color: #333;
+}
+
 .headContainer {
   display: flex;
   gap: 10px;

@@ -18,8 +18,3 @@ export interface ICryptos {
   twitterUrl: string;
   explorers: string[];
 }
-
-export interface ISymbols {
-  symbol: string;
-  asset: string;
-}

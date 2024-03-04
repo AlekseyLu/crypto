@@ -1,15 +1,14 @@
-import { FC } from "react";
 import { Statistic } from "antd";
 
-import { Loading } from ".";
+import { Loading } from "../Loading";
 
-import { IMarketData } from "../types/marketData.type";
+import { IMarketData } from "../../types/marketData.type";
 
-import { useGetMarketDataQuery } from "../store/slices/marketDataApi";
+import { useGetMarketDataQuery } from "../../store/slices/marketDataApi";
 
-import styles from "../styles/marketData.module.css";
+import styles from "./marketData.module.css";
 
-export const MarketData: FC = () => {
+export const MarketData = () => {
   const { data: marketData, isFetching } = useGetMarketDataQuery("");
   const markets: IMarketData = marketData;
 

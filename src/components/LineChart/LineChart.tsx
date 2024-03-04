@@ -12,9 +12,9 @@ import {
 } from "chart.js";
 import { Line } from "react-chartjs-2";
 
-import { useGetCoinDetailsTimestampQuery } from "../store/slices/cryptoApi";
+import { useGetCoinDetailsTimestampQuery } from "../../store/slices/cryptoApi";
 
-import { Loading } from ".";
+import { Loading } from "../Loading";
 
 ChartJS.register(
   CategoryScale,

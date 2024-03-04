@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 
-import { Loading } from ".";
+import { Loading } from "../Loading";
 
-import { useGetExchangesQuery } from "../store/slices/exchangesApi";
+import { useGetExchangesQuery } from "../../store/slices/exchangesApi";
 
-import { IEchanges } from "../types/exchanges.type";
+import { IEchanges } from "../../types/exchanges.type";
 
-import styles from "../styles/exhanges.module.css";
+import styles from "./exhanges.module.css";
 
 export const Exchanges = () => {
   const { data, isFetching } = useGetExchangesQuery("");

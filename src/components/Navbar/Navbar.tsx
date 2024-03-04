@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Button } from "antd";
 import {
@@ -10,11 +10,11 @@ import {
   MoneyCollectOutlined,
 } from "@ant-design/icons";
 
-import LOGO from "../../public/coinbase.png";
+import LOGO from "/coinbase.png";
 
-import styles from "../styles/navbar.module.css";
+import styles from "./navbar.module.css";
 
-export const Navbar: FC = () => {
+export const Navbar = () => {
   const [isActiveMenu, setIsActiveMenu] = useState(false);
 
   const closeMenu = () => setIsActiveMenu(false);
@@ -31,14 +31,14 @@ export const Navbar: FC = () => {
       <nav className={styles.nav + " " + (isActiveMenu && styles.active)}>
         <ul className={styles.list}>
           <li className={styles.item}>
-            <NavLink to="/crypto" className={styles.link} onClick={closeMenu}>
+            <NavLink to="/" className={styles.link} onClick={closeMenu}>
               <HomeOutlined />
               Главная
             </NavLink>
           </li>
           <li className={styles.item}>
             <NavLink
-              to="/crypto/exchanges"
+              to="/exchanges"
               className={styles.link}
               onClick={closeMenu}
             >
@@ -48,7 +48,7 @@ export const Navbar: FC = () => {
           </li>
           <li className={styles.item}>
             <NavLink
-              to="/crypto/cryptocurrencies"
+              to="/cryptocurrencies"
               className={styles.link}
               onClick={closeMenu}
             >
@@ -57,11 +57,7 @@ export const Navbar: FC = () => {
             </NavLink>
           </li>
           <li className={styles.item}>
-            <NavLink
-              to="/crypto/news"
-              className={styles.link}
-              onClick={closeMenu}
-            >
+            <NavLink to="/news" className={styles.link} onClick={closeMenu}>
               <BulbOutlined />
               Новости
             </NavLink>

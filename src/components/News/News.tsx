@@ -2,11 +2,11 @@ import { FC, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Input, Typography } from "antd";
 
-import { INews } from "../types/news.type";
+import { INews } from "../../types/news.type";
 
-import { useGetCryptoNewsQuery } from "../store/slices/newsApi";
+import { useGetCryptoNewsQuery } from "../../store/slices/newsApi";
 
-import styles from "../styles/news.module.css";
+import styles from "./news.module.css";
 
 const { Title } = Typography;
 

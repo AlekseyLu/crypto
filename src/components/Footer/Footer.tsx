@@ -1,25 +1,26 @@
-import { FC } from "react";
 import { Link } from "react-router-dom";
 
-import styles from "../styles/footer.module.css";
+import LOGO from "/coinbase.png";
 
-export const Footer: FC = () => {
+import styles from "./footer.module.css";
+
+export const Footer = () => {
   return (
     <div className={styles.footer}>
-      <img src="/coinbase.png" alt="#" className={styles.logo} />
+      <img src={LOGO} alt="Логотип 'coinbase'" className={styles.logo} />
       <ul className={styles.list}>
         <li className={styles.item}>
-          <Link to="/" className={styles.link}>
+          <Link to="/exchanges" className={styles.link}>
             Обмен
           </Link>
         </li>
         <li className={styles.item}>
-          <Link to="/" className={styles.link}>
+          <Link to="/cryptocurrencies" className={styles.link}>
             Криптовалюта
           </Link>
         </li>
         <li className={styles.item}>
-          <Link to="/" className={styles.link}>
+          <Link to="/news" className={styles.link}>
             Новости
           </Link>
         </li>

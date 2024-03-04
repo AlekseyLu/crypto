@@ -2,9 +2,11 @@ import { FC } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "antd";
 
-import { Cryptocurrencies, News, MarketData } from "./index";
+import { News } from "../News";
+import { MarketData } from "../MarketData";
+import { Cryptocurrencies } from "../Cryptocurrencies";
 
-import styles from "../styles/homepage.module.css";
+import styles from "./homepage.module.css";
 
 export const HomePage: FC = () => (
   <section className={styles.homepage}>

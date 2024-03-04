@@ -2,13 +2,13 @@ import { FC, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Avatar, Input } from "antd";
 
-import { useGetCryproCoinsQuery } from "../store/slices/cryptoApi";
+import { Loading } from "../Loading";
 
-import { ICryptos } from "../types/cryptos.type";
+import { useGetCryproCoinsQuery } from "../../store/slices/cryptoApi";
 
-import styles from "../styles/cryptocurrencies.module.css";
+import { ICryptos } from "../../types/cryptos.type";
 
-import { Loading } from ".";
+import styles from "./cryptocurrencies.module.css";
 
 interface IProps {
   limit?: boolean;
